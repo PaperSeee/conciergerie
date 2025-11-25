@@ -41,7 +41,7 @@
   
   .btn-primary::before {
     content: '';
-    @apply absolute inset-0 bg-gradient-to-r from-primary-500 to-primary-600 opacity-0 transition-opacity duration-500;
+    @apply absolute inset-0 bg-gradient-to-r from-neutral-700 to-neutral-800 opacity-0 transition-opacity duration-500;
   }
   
   .btn-primary:hover::before {

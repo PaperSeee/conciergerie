@@ -54,9 +54,9 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-neutral-50 to-white">
         {/* Formes organiques animées */}
         <div className="absolute inset-0 overflow-hidden opacity-40">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-primary-200/30 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
-          <div className="absolute top-40 right-10 w-72 h-72 bg-neutral-200/40 rounded-full mix-blend-multiply filter blur-3xl animate-blob" style={{ animationDelay: '2s' }}></div>
-          <div className="absolute -bottom-8 left-1/3 w-72 h-72 bg-primary-100/30 rounded-full mix-blend-multiply filter blur-3xl animate-blob" style={{ animationDelay: '4s' }}></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-neutral-200/40 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
+          <div className="absolute top-40 right-10 w-72 h-72 bg-neutral-300/30 rounded-full mix-blend-multiply filter blur-3xl animate-blob" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute -bottom-8 left-1/3 w-72 h-72 bg-neutral-200/30 rounded-full mix-blend-multiply filter blur-3xl animate-blob" style={{ animationDelay: '4s' }}></div>
         </div>
 
         <div className="container-custom relative z-10 pt-32 pb-20">
@@ -83,7 +83,7 @@ export default function Home() {
               <span className="relative inline-block">
                 géré avec passion
                 <svg className="absolute -bottom-2 left-0 w-full" height="12" viewBox="0 0 300 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2 10C50 2 100 8 150 6C200 4 250 10 298 6" stroke="#FF385C" strokeWidth="3" strokeLinecap="round"/>
+                  <path d="M2 10C50 2 100 8 150 6C200 4 250 10 298 6" stroke="#525252" strokeWidth="3" strokeLinecap="round"/>
                 </svg>
               </span>
             </h1>
@@ -163,7 +163,7 @@ export default function Home() {
                 transition={{ delay: index * 0.1 }}
                 className="card-premium group cursor-pointer"
               >
-                <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center text-white text-3xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-gradient-to-br from-neutral-700 to-neutral-800 rounded-2xl flex items-center justify-center text-white text-3xl mb-6 group-hover:scale-110 transition-transform duration-300">
                   {service.icon}
                 </div>
                 <h3 className="text-2xl font-semibold mb-4">{service.title}</h3>
@@ -210,7 +210,7 @@ export default function Home() {
                     transition={{ delay: index * 0.1 }}
                     className="flex items-center space-x-4"
                   >
-                    <div className="flex-shrink-0 w-6 h-6 bg-primary-500 rounded-full flex items-center justify-center">
+                    <div className="flex-shrink-0 w-6 h-6 bg-neutral-700 rounded-full flex items-center justify-center">
                       <FaCheckCircle className="text-white text-sm" />
                     </div>
                     <span className="text-lg text-neutral-700">{benefit}</span>

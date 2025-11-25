@@ -112,8 +112,8 @@ export default function Contact() {
       {/* Hero Organique */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-neutral-50 to-white">
         <div className="absolute inset-0 overflow-hidden opacity-30">
-          <div className="absolute top-20 right-10 w-72 h-72 bg-primary-200/40 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
-          <div className="absolute top-40 left-10 w-72 h-72 bg-neutral-200/40 rounded-full mix-blend-multiply filter blur-3xl animate-blob" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute top-20 right-10 w-72 h-72 bg-neutral-200/40 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
+          <div className="absolute top-40 left-10 w-72 h-72 bg-neutral-300/30 rounded-full mix-blend-multiply filter blur-3xl animate-blob" style={{ animationDelay: '2s' }}></div>
         </div>
 
         <div className="container-custom relative z-10 pt-32 pb-20 text-center">
@@ -128,7 +128,7 @@ export default function Contact() {
               transition={{ delay: 0.2 }}
               className="inline-flex items-center space-x-2 bg-white px-5 py-2.5 rounded-full mb-8 shadow-sm border border-neutral-100"
             >
-              <FaEnvelope className="text-primary-500" />
+              <FaEnvelope className="text-neutral-700" />
               <span className="text-sm font-medium text-neutral-700">Réponse sous 24h</span>
             </motion.div>
 
@@ -138,7 +138,7 @@ export default function Contact() {
               <span className="relative inline-block">
                 Parlons-en ensemble
                 <svg className="absolute -bottom-2 left-0 w-full" height="12" viewBox="0 0 300 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2 10C50 2 100 8 150 6C200 4 250 10 298 6" stroke="#FF385C" strokeWidth="3" strokeLinecap="round"/>
+                  <path d="M2 10C50 2 100 8 150 6C200 4 250 10 298 6" stroke="#525252" strokeWidth="3" strokeLinecap="round"/>
                 </svg>
               </span>
             </h1>
@@ -322,12 +322,12 @@ export default function Contact() {
               viewport={{ once: true }}
               className="space-y-6"
             >
-              <div className="bg-white p-6 rounded-3xl shadow-sm border border-neutral-100">
+              <div className="bg-neutral-50 p-6 rounded-3xl border border-neutral-100">
                 <h3 className="text-xl font-bold mb-4 text-neutral-900">Nos garanties</h3>
                 <div className="space-y-3">
                   {guarantees.map((guarantee, idx) => (
                     <div key={idx} className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-primary-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <div className="w-6 h-6 bg-neutral-700 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                         <span className="text-white text-xs font-bold">✓</span>
                       </div>
                       <span className="text-neutral-700">{guarantee}</span>
@@ -336,7 +336,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="bg-primary-50 p-6 rounded-3xl border-2 border-primary-100">
+              <div className="bg-neutral-100 p-6 rounded-3xl border-2 border-neutral-200">
                 <h3 className="text-xl font-bold mb-3 text-neutral-900">Besoin d'aide ?</h3>
                 <p className="text-neutral-700 mb-4">
                   Notre équipe est disponible pour répondre à toutes vos questions.
@@ -410,7 +410,7 @@ export default function Contact() {
               >
                 <summary className="font-semibold text-lg cursor-pointer flex justify-between items-center text-neutral-900">
                   {faq.question}
-                  <span className="text-2xl text-primary-600 group-open:rotate-180 transition-transform">
+                  <span className="text-2xl text-neutral-600 group-open:rotate-180 transition-transform">
                     ↓
                   </span>
                 </summary>

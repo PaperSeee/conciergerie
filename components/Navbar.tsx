@@ -43,7 +43,7 @@ export default function Navbar() {
             <motion.div whileHover={{ rotate: 5 }} className="relative">
               <div className="w-11 h-11 bg-neutral-900 rounded-2xl flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 relative overflow-hidden">
                 <span className="text-white text-xl font-bold relative z-10">A</span>
-                <div className="absolute inset-0 bg-gradient-to-br from-primary-500 to-primary-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-neutral-700 to-neutral-800 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
             </motion.div>
             <div>

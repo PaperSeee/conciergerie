@@ -62,7 +62,7 @@ export default function Tarifs() {
       {/* Hero */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-neutral-50 to-white">
         <div className="absolute inset-0 overflow-hidden opacity-30">
-          <div className="absolute top-20 right-10 w-72 h-72 bg-primary-200/40 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
+          <div className="absolute top-20 right-10 w-72 h-72 bg-neutral-200/40 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
         </div>
 
         <div className="container-custom relative z-10 pt-32 pb-20 text-center">
@@ -77,7 +77,7 @@ export default function Tarifs() {
               <span className="relative inline-block">
                 et adaptés à vous
                 <svg className="absolute -bottom-2 left-0 w-full" height="12" viewBox="0 0 300 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2 10C50 2 100 8 150 6C200 4 250 10 298 6" stroke="#FF385C" strokeWidth="3" strokeLinecap="round"/>
+                  <path d="M2 10C50 2 100 8 150 6C200 4 250 10 298 6" stroke="#525252" strokeWidth="3" strokeLinecap="round"/>
                 </svg>
               </span>
             </h1>
@@ -118,7 +118,7 @@ export default function Tarifs() {
               viewport={{ once: true }}
               className="bg-gray-50 p-6 rounded-xl"
             >
-              <h3 className="font-bold text-xl mb-3 text-primary-600">Commission</h3>
+              <h3 className="font-bold text-xl mb-3 text-neutral-800">Commission</h3>
               <p className="text-gray-700">
                 Parfait si vous débutez sur Airbnb ou si votre taux d'occupation est encore faible.
                 Vous ne payez que lorsque votre bien génère des revenus.
@@ -129,9 +129,9 @@ export default function Tarifs() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
-              className="bg-primary-50 p-6 rounded-xl border-2 border-primary-300"
+              className="bg-neutral-100 p-6 rounded-xl border-2 border-neutral-300"
             >
-              <h3 className="font-bold text-xl mb-3 text-primary-600">Pack Mensuel ⭐</h3>
+              <h3 className="font-bold text-xl mb-3 text-neutral-800">Pack Mensuel ⭐</h3>
               <p className="text-gray-700">
                 Le meilleur rapport qualité-prix pour un appartement bien loué. Budget fixe et
                 maîtrisé, services premium inclus.
@@ -144,7 +144,7 @@ export default function Tarifs() {
               viewport={{ once: true }}
               className="bg-gray-50 p-6 rounded-xl"
             >
-              <h3 className="font-bold text-xl mb-3 text-primary-600">Full Premium</h3>
+              <h3 className="font-bold text-xl mb-3 text-neutral-800">Full Premium</h3>
               <p className="text-gray-700">
                 Pour les propriétaires exigeants qui veulent un service haut de gamme et sur-mesure.
                 Gestion complète sans aucune intervention de votre part.

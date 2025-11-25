@@ -101,8 +101,8 @@ export default function Services() {
       {/* Hero */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-neutral-50 to-white">
         <div className="absolute inset-0 overflow-hidden opacity-30">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-primary-200/40 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
-          <div className="absolute top-40 right-10 w-72 h-72 bg-neutral-200/40 rounded-full mix-blend-multiply filter blur-3xl animate-blob" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-neutral-200/40 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
+          <div className="absolute top-40 right-10 w-72 h-72 bg-neutral-300/30 rounded-full mix-blend-multiply filter blur-3xl animate-blob" style={{ animationDelay: '2s' }}></div>
         </div>
 
         <div className="container-custom relative z-10 pt-32 pb-20 text-center">
@@ -117,7 +117,7 @@ export default function Services() {
               transition={{ delay: 0.2 }}
               className="inline-flex items-center space-x-2 bg-white px-5 py-2.5 rounded-full mb-8 shadow-sm border border-neutral-100"
             >
-              <FaStar className="text-primary-500" />
+              <FaStar className="text-neutral-700" />
               <span className="text-sm font-medium text-neutral-700">Service tout-en-un</span>
             </motion.div>
 
@@ -127,7 +127,7 @@ export default function Services() {
               <span className="relative inline-block">
                 votre appartement
                 <svg className="absolute -bottom-2 left-0 w-full" height="12" viewBox="0 0 300 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2 10C50 2 100 8 150 6C200 4 250 10 298 6" stroke="#FF385C" strokeWidth="3" strokeLinecap="round"/>
+                  <path d="M2 10C50 2 100 8 150 6C200 4 250 10 298 6" stroke="#525252" strokeWidth="3" strokeLinecap="round"/>
                 </svg>
               </span>
             </h1>
@@ -152,7 +152,7 @@ export default function Services() {
                 className="group"
               >
                 <div className="bg-neutral-50 rounded-3xl p-8 hover:shadow-xl transition-all duration-500 border border-neutral-100 h-full">
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center text-white text-3xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-gradient-to-br from-neutral-700 to-neutral-800 rounded-2xl flex items-center justify-center text-white text-3xl mb-6 group-hover:scale-110 transition-transform duration-300">
                     {service.icon}
                   </div>
                   <h3 className="text-2xl font-bold mb-4 text-neutral-900">{service.title}</h3>
@@ -160,7 +160,7 @@ export default function Services() {
                   <ul className="space-y-3">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start space-x-3">
-                        <div className="w-1.5 h-1.5 bg-primary-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <div className="w-1.5 h-1.5 bg-neutral-600 rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-neutral-700">{feature}</span>
                       </li>
                     ))}
