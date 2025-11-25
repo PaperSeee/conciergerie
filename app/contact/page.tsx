@@ -31,12 +31,23 @@ export default function Contact() {
       return
     }
 
-    setTimeout(() => {
-      console.log('Formulaire soumis:', formData)
-      setStatus('success')
-      setFormData({ nom: '', email: '', telephone: '', adresse: '', message: '' })
-      setTimeout(() => setStatus('idle'), 5000)
-    }, 1500)
+    // Préparer le contenu de l'email
+    const subject = encodeURIComponent(`Demande de contact - ${formData.nom}`)
+    const body = encodeURIComponent(
+      `Nom: ${formData.nom}\n` +
+      `Email: ${formData.email}\n` +
+      `Téléphone: ${formData.telephone}\n` +
+      `Adresse: ${formData.adresse || 'Non renseignée'}\n\n` +
+      `Message:\n${formData.message || 'Aucun message'}`
+    )
+
+    // Ouvrir le client mail
+    window.location.href = `mailto:contact@ilias-conciergerie.be?subject=${subject}&body=${body}`
+
+    // Afficher le message de succès
+    setStatus('success')
+    setFormData({ nom: '', email: '', telephone: '', adresse: '', message: '' })
+    setTimeout(() => setStatus('idle'), 5000)
   }
 
   const contactInfo = [
@@ -45,28 +56,28 @@ export default function Contact() {
       title: 'Téléphone',
       value: '0489 57 65 65',
       subtitle: 'Lun-Ven 9h-19h',
-      color: 'blue',
+      color: 'neutral',
     },
     {
       icon: FaEnvelope,
       title: 'Email',
-      value: 'contact@alfred-conciergerie.be',
+      value: 'contact@ilias-conciergerie.be',
       subtitle: 'Réponse sous 24h',
-      color: 'purple',
+      color: 'neutral',
     },
     {
       icon: FaMapMarkerAlt,
       title: 'Zone',
       value: 'Bruxelles & Région',
       subtitle: 'Toute la région bruxelloise',
-      color: 'pink',
+      color: 'neutral',
     },
     {
       icon: FaClock,
       title: 'Disponibilité',
       value: '7 jours sur 7',
       subtitle: 'Service d\'urgence',
-      color: 'green',
+      color: 'neutral',
     },
   ]
 
@@ -99,12 +110,13 @@ export default function Contact() {
 
   const getColorClasses = (color: string) => {
     const colors: Record<string, string> = {
-      blue: 'from-blue-500 to-blue-600',
-      purple: 'from-purple-500 to-purple-600',
-      pink: 'from-pink-500 to-pink-600',
-      green: 'from-green-500 to-green-600',
+      neutral: 'from-neutral-700 to-neutral-800',
+      blue: 'from-neutral-600 to-neutral-700',
+      purple: 'from-neutral-600 to-neutral-700',
+      pink: 'from-neutral-600 to-neutral-700',
+      green: 'from-neutral-600 to-neutral-700',
     }
-    return colors[color] || 'from-primary-500 to-primary-600'
+    return colors[color] || 'from-neutral-700 to-neutral-800'
   }
 
   return (
@@ -169,7 +181,7 @@ export default function Contact() {
                     <Icon />
                   </div>
                   <h3 className="font-bold text-lg mb-1 text-neutral-900">{item.title}</h3>
-                  <p className="text-primary-600 font-semibold mb-1">{item.value}</p>
+                  <p className="text-neutral-800 font-semibold mb-1">{item.value}</p>
                   <p className="text-sm text-neutral-600">{item.subtitle}</p>
                 </motion.div>
               )

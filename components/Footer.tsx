@@ -37,10 +37,10 @@ export default function Footer() {
           <div className="lg:col-span-4">
             <Link href="/" className="inline-flex items-center space-x-3 mb-6 group">
               <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <span className="text-neutral-900 text-lg font-bold">A</span>
+                <span className="text-neutral-900 text-lg font-bold">I</span>
               </div>
               <div>
-                <span className="text-lg font-bold text-white block leading-none">Alfred</span>
+                <span className="text-lg font-bold text-white block leading-none">Ilias</span>
                 <span className="text-xs text-neutral-400">Conciergerie Airbnb</span>
               </div>
             </Link>
@@ -124,7 +124,7 @@ export default function Footer() {
         <div className="pt-8 border-t border-neutral-800">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-neutral-500 text-sm">
-              © {currentYear} Alfred Conciergerie. Tous droits réservés.
+              © {currentYear} Ilias Conciergerie. Tous droits réservés.
             </p>
             <div className="flex space-x-6 text-sm">
               <Link href="#" className="text-neutral-500 hover:text-white transition-colors">

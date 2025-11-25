@@ -31,12 +31,12 @@ export default function APropos() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-neutral-50 to-white">
+      <section className="relative min-h-[50vh] md:min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-neutral-50 to-white">
         <div className="absolute inset-0 overflow-hidden opacity-30">
           <div className="absolute top-20 left-1/4 w-72 h-72 bg-neutral-200/40 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
         </div>
 
-        <div className="container-custom relative z-10 pt-32 pb-20 text-center">
+        <div className="container-custom relative z-10 pt-28 md:pt-32 pb-16 md:pb-20 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -46,23 +46,23 @@ export default function APropos() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center space-x-2 bg-white px-5 py-2.5 rounded-full mb-8 shadow-sm border border-neutral-100"
+              className="inline-flex items-center space-x-2 bg-white px-4 md:px-5 py-2 md:py-2.5 rounded-full mb-6 md:mb-8 shadow-sm border border-neutral-100"
             >
-              <FaHeart className="text-neutral-700" />
-              <span className="text-sm font-medium text-neutral-700">Notre histoire</span>
+              <FaHeart className="text-neutral-700 text-sm md:text-base" />
+              <span className="text-xs md:text-sm font-medium text-neutral-700">Notre histoire</span>
             </motion.div>
 
-            <h1 className="mb-6 text-neutral-900">
+            <h1 className="mb-4 md:mb-6 text-neutral-900 text-4xl md:text-5xl lg:text-7xl px-4">
               Une conciergerie
               <br />
-              <span className="relative inline-block">
+              <span className="relative inline-block mt-2">
                 qui vous comprend
-                <svg className="absolute -bottom-2 left-0 w-full" height="12" viewBox="0 0 300 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className="absolute -bottom-1 md:-bottom-2 left-0 w-full" height="12" viewBox="0 0 300 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M2 10C50 2 100 8 150 6C200 4 250 10 298 6" stroke="#525252" strokeWidth="3" strokeLinecap="round"/>
                 </svg>
               </span>
             </h1>
-            <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto px-4">
               Spécialisés dans les propriétaires d'un seul appartement à Bruxelles
             </p>
           </motion.div>
@@ -70,17 +70,17 @@ export default function APropos() {
       </section>
 
       {/* Mon histoire */}
-      <section className="py-24 bg-white">
+      <section className="py-16 md:py-24 bg-white">
         <div className="container-custom max-w-4xl">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            <h2 className="mb-12 text-center">Mon parcours</h2>
-            <div className="space-y-6 text-lg text-neutral-700 leading-relaxed">
+            <h2 className="mb-8 md:mb-12 text-center text-3xl md:text-5xl px-4">Mon parcours</h2>
+            <div className="space-y-4 md:space-y-6 text-base md:text-lg text-neutral-700 leading-relaxed px-4">
               <p>
-                J'ai lancé MaConciergerie après avoir moi-même été propriétaire d'un appartement sur
+                J'ai lancé Ilias Conciergerie après avoir moi-même été propriétaire d'un appartement sur
                 Airbnb. J'ai rapidement compris que la gestion quotidienne pouvait devenir
                 chronophage : messages à toute heure, check-ins le weekend, coordination du ménage,
                 gestion des imprévus...
@@ -107,20 +107,20 @@ export default function APropos() {
       </section>
 
       {/* Mes valeurs */}
-      <section className="py-24 bg-neutral-50">
+      <section className="py-16 md:py-24 bg-neutral-50">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-12 md:mb-16 px-4"
           >
-            <h2 className="mb-4">Nos valeurs</h2>
-            <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
+            <h2 className="mb-3 md:mb-4 text-3xl md:text-5xl">Nos valeurs</h2>
+            <p className="text-base md:text-lg text-neutral-600 max-w-2xl mx-auto">
               Ce qui guide notre travail au quotidien
             </p>
           </motion.div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 px-4 md:px-0">
             {values.map((value, index) => (
               <motion.div
                 key={index}
@@ -128,13 +128,13 @@ export default function APropos() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 border border-neutral-100 text-center group"
+                className="bg-white p-6 md:p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 border border-neutral-100 text-center group"
               >
-                <div className="w-16 h-16 bg-gradient-to-br from-neutral-700 to-neutral-800 rounded-2xl flex items-center justify-center text-white text-3xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
+                <div className="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-neutral-700 to-neutral-800 rounded-2xl flex items-center justify-center text-white text-2xl md:text-3xl mb-4 md:mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
                   {value.icon}
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-neutral-900">{value.title}</h3>
-                <p className="text-neutral-600">{value.description}</p>
+                <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3 text-neutral-900">{value.title}</h3>
+                <p className="text-sm md:text-base text-neutral-600 leading-relaxed">{value.description}</p>
               </motion.div>
             ))}
           </div>
@@ -142,16 +142,18 @@ export default function APropos() {
       </section>
 
       {/* Pourquoi spécialisé */}
-      <section className="py-24 bg-white">
+      <section className="py-16 md:py-24 bg-white">
         <div className="container-custom max-w-4xl">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            <h2 className="mb-12 text-center">Pourquoi 100% petits propriétaires ?</h2>
-            <div className="bg-neutral-100 p-10 rounded-3xl border-2 border-neutral-200">
-              <div className="space-y-6 text-lg text-neutral-700 leading-relaxed">
+            <h2 className="mb-8 md:mb-12 text-center text-3xl md:text-5xl px-4">
+              Pourquoi 100% petits propriétaires ?
+            </h2>
+            <div className="bg-neutral-100 p-6 md:p-10 rounded-3xl border-2 border-neutral-200 mx-4 md:mx-0">
+              <div className="space-y-4 md:space-y-6 text-base md:text-lg text-neutral-700 leading-relaxed">
                 <p>
                   <strong>Parce que vous méritez une attention particulière.</strong> Contrairement
                   aux investisseurs qui possèdent des dizaines d'appartements, vous avez un lien
@@ -177,22 +179,22 @@ export default function APropos() {
       </section>
 
       {/* CTA Final */}
-      <section className="py-24 bg-gradient-to-br from-neutral-900 to-neutral-800 text-white">
-        <div className="container-custom text-center">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-neutral-900 to-neutral-800 text-white">
+        <div className="container-custom text-center px-4">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
           >
-            <h2 className="mb-6 text-white">Discutons de votre projet</h2>
-            <p className="text-xl text-neutral-300 mb-12 max-w-2xl mx-auto">
+            <h2 className="mb-4 md:mb-6 text-white text-3xl md:text-5xl">Discutons de votre projet</h2>
+            <p className="text-lg md:text-xl text-neutral-300 mb-8 md:mb-12 max-w-2xl mx-auto">
               Chaque appartement mérite une attention particulière
             </p>
             <Link href="/contact">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-white text-neutral-900 px-12 py-5 rounded-full font-semibold text-lg hover:shadow-xl transition-all"
+                className="bg-white text-neutral-900 px-8 md:px-12 py-4 md:py-5 rounded-full font-semibold text-base md:text-lg hover:shadow-xl transition-all"
               >
                 Parlons de votre projet
               </motion.button>

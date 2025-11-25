@@ -42,13 +42,13 @@ export default function Navbar() {
           <Link href="/" className="flex items-center space-x-3 group">
             <motion.div whileHover={{ rotate: 5 }} className="relative">
               <div className="w-11 h-11 bg-neutral-900 rounded-2xl flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 relative overflow-hidden">
-                <span className="text-white text-xl font-bold relative z-10">A</span>
+                <span className="text-white text-xl font-bold relative z-10">I</span>
                 <div className="absolute inset-0 bg-gradient-to-br from-neutral-700 to-neutral-800 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
             </motion.div>
             <div>
               <span className="text-xl font-bold text-neutral-900 block leading-none">
-                Alfred
+                Ilias
               </span>
               <span className="text-xs text-neutral-500 block mt-0.5">Conciergerie</span>
             </div>

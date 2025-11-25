@@ -36,7 +36,6 @@ export default function Home() {
     { value: '98%', label: 'Taux de satisfaction' },
     { value: '+35%', label: 'Revenus en moyenne' },
     { value: '2h', label: 'Temps de réponse' },
-    { value: '100+', label: 'Clients satisfaits' },
   ]
 
   const benefits = [
@@ -120,7 +119,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto"
+            className="mt-24 grid grid-cols-3 gap-8 md:gap-12 max-w-4xl mx-auto"
           >
             {stats.map((stat, index) => (
               <motion.div
@@ -225,7 +224,7 @@ export default function Home() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-square bg-gradient-to-br from-primary-100 to-primary-200 rounded-3xl"></div>
+              <div className="aspect-square bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-3xl"></div>
             </motion.div>
           </div>
         </div>

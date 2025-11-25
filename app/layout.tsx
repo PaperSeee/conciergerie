@@ -7,9 +7,9 @@ import Footer from '@/components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Conciergerie Airbnb - Spécialiste Petits Propriétaires',
-  description: 'Gestion complète de votre appartement Airbnb. Service personnalisé pour propriétaires d\'un seul logement. Tarifs accessibles et transparents.',
-  keywords: 'conciergerie airbnb, gestion airbnb, petit propriétaire, appartement airbnb',
+  title: 'Ilias Conciergerie - Spécialiste Petits Propriétaires Airbnb',
+  description: 'Gestion complète de votre appartement Airbnb à Bruxelles. Service personnalisé pour propriétaires d\'un seul logement. Tarifs accessibles et transparents.',
+  keywords: 'conciergerie airbnb bruxelles, gestion airbnb, petit propriétaire, appartement airbnb, ilias conciergerie',
 }
 
 export default function RootLayout({
