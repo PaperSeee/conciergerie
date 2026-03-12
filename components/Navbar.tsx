@@ -20,10 +20,7 @@ export default function Navbar() {
   }, [])
 
   const links = [
-    { href: '/', label: 'Accueil' },
-    { href: '/services', label: 'Services' },
-    { href: '/tarifs', label: 'Tarifs' },
-    { href: '/a-propos', label: 'À propos' },
+    { href: '/backtest', label: 'Accueil' },
   ]
 
   return (
@@ -48,9 +45,9 @@ export default function Navbar() {
             </motion.div>
             <div>
               <span className="text-xl font-bold text-neutral-900 block leading-none">
-                Ilias
+                MT4 Analyzer
               </span>
-              <span className="text-xs text-neutral-500 block mt-0.5">Conciergerie</span>
+              <span className="text-xs text-neutral-500 block mt-0.5">Backtest Analytics</span>
             </div>
           </Link>
 
